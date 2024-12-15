@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Photo Slider</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', Arial, sans-serif;
+            background: linear-gradient(135deg, #ff4d4d, #ff0000);
+            overflow-x: hidden;
+            color: #fff;
+            text-align: center;
+        }
+
+        .slider-container {
+            position: relative;
+            width: 90%;
+            max-width: 1200px;
+            margin: 50px auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        h1 {
+            width: 100%;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .slide {
+            width: 22%; /* Smaller size for more compact layout */
+            margin-bottom: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .slide:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .slide img {
+            width: 100%;
+            display: block;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .slide {
+                width: 45%; /* Adjust for smaller screens */
+            }
+
+            h1 {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .slide {
+                width: 100%; /* Single-column for very small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Image Grid -->
+    <div class="slider-container">
+        <h1>POSTER HARI-HARI BESAR</h1>
+        <div class="slide"><img src="pos1.jpeg" alt="Slide 1"></div>
+        <div class="slide"><img src="pos2.jpeg" alt="Slide 2"></div>
+        <div class="slide"><img src="pos3.jpeg" alt="Slide 3"></div>
+        <div class="slide"><img src="pos4.jpeg" alt="Slide 4"></div>
+        <div class="slide"><img src="pos5.jpeg" alt="Slide 5"></div>
+        <div class="slide"><img src="pos6.jpeg" alt="Slide 6"></div>
+        <div class="slide"><img src="pos7.jpeg" alt="Slide 7"></div>
+        <div class="slide"><img src="pos8.jpeg" alt="Slide 8"></div>
+        <div class="slide"><img src="pos9.jpeg" alt="Slide 9"></div>
+        <div class="slide"><img src="pos10.jpeg" alt="Slide 10"></div>
+        <div class="slide"><img src="pos11.jpeg" alt="Slide 11"></div>
+        <div class="slide"><img src="pos12.jpeg" alt="Slide 12"></div>
+        <div class="slide"><img src="pos13.jpeg" alt="Slide 13"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 PAMARESMA (PALANG MERAH REMAJA SMP NEGERI 5)</p>
+    </footer>
+</body>
+</html>
